@@ -9,20 +9,31 @@
 </head>
 <body>
 
+    <section>
+        <div class="container">
+            <div class="rom">
+                <div class="col-12">
+                    <h1 class="text-center mb-5 mt-5"> JUEGO CONCENTRECE </h1>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
     <main>
         <div class="container">
             <div class="row row-cols-1 row-cols-md-4 g-2">
 
                 <div class="col">
-                    <div class="card h-100" style="width: 10rem;" id="constructor1">
+                    <div class="card h-100 bg-secondary" style="width: 10rem;" id="constructor1">
                     
-                        <img src="img/constructor.png" alt="img1" class="card-img-top" id="fotoconstructor1">
+                        <img src="img/constructor.png" alt="img1" class="card-img-top invisible" id="fotoconstructor1">
                     
                     </div>
                 </div>
 
                 <div class="col">
-                    <div class="card h-100 bg-dark" style="width: 10rem;" id="medico1">
+                    <div class="card h-100 bg-warning" style="width: 10rem;" id="medico1">
                     
                         <img src="img/medico.png" alt="img1" class="card-img-top invisible" id="fotomedico1">
                     
@@ -30,9 +41,9 @@
                 </div>
 
                 <div class="col">
-                    <div class="card h-100" style="width: 10rem;">
+                    <div class="card h-100 bg-dark" style="width: 10rem;" id="constructor2">
                     
-                        <img src="img/constructor.png" alt="img1" class="card-img-top">
+                        <img src="img/constructor.png" alt="img1" class="card-img-top invisible" id="fotoconstructor2">
                     
                     </div>
                 </div>
@@ -46,7 +57,7 @@
                 </div>
 
                 <div class="col">
-                    <div class="card h-100 bg-dark" style="width: 10rem;" id="medico2">
+                    <div class="card h-100 bg-primary" style="width: 10rem;" id="medico2">
                     
                         <img src="img/medico.png" alt="img1" class="card-img-top mt-3 invisible" id="fotomedico2">
                     
@@ -54,9 +65,9 @@
                 </div>
 
                 <div class="col">
-                    <div class="card h-100" style="width: 10rem;">
+                    <div class="card h-100 bg-danger" style="width: 10rem;" id="profesor1">
                     
-                        <img src="img/profesor.png" alt="img1" class="card-img-top mt-3">
+                        <img src="img/profesor.png" alt="img1" class="card-img-top mt-3 invisible" id="fotoprofesor1">
                     
                     </div>
                 </div>
@@ -70,9 +81,9 @@
                 </div>
 
                 <div class="col">
-                    <div class="card h-100" style="width: 10rem;">
+                    <div class="card h-100 bg-success" style="width: 10rem;" id="profesor2">
                     
-                        <img src="img/profesor.png" alt="img1" class="card-img-top mt-3">
+                        <img src="img/profesor.png" alt="img1" class="card-img-top mt-3 invisible"  id="fotoprofesor2">
                     
                     </div>
                 </div>
@@ -80,6 +91,55 @@
             </div>
         </div>
     </main>
+
+    <hr>
+    <section>
+        <div class="container justify-content-center">
+            <div class="row invisible" id="resultadoConstructor">
+
+                <div class="col-2 ">
+                    <img src="img/constructor.png" alt="img5" class="img-fluid w-100">
+                </div>
+
+                <div class="col-2 align-self-end">
+                    <h1 >CONSTRUCTOR</h1>
+                </div>
+            </div>
+
+            <div class="row mt-5 invisible" id="resultadoMedico">
+
+                <div class="col-2 ">
+                    <img src="img/medico.png" alt="" class="img-fluid w-100">
+                </div>
+
+                <div class="col-2 align-self-end">
+                    <h1 >MEDICO</h1>
+                </div>
+            </div>
+
+            <div class="row mt-5 invisible" id="resultadoPolicia">
+
+                <div class="col-2">
+                    <img src="img/mujer-policia.png" alt="" class="img-fluid w-100">
+                </div>
+
+                <div class="col-2 align-self-end">
+                    <h1 >POLICIA</h1>
+                </div>
+            </div>
+
+            <div class="row mt-5 invisible" id="resultadoProfesor">
+
+                <div class="col-2">
+                    <img src="img/profesor.png" alt="" class="img-fluid w-100">
+                </div>
+
+                <div class="col-2 align-self-end">
+                    <h1 >PROFESOR</h1>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
