@@ -10,7 +10,7 @@ let fotocerdo1=document.getElementById("fotocerdo1");
 let cerdo2=document.getElementById("cerdo2");
 let fotocerdo2=document.getElementById("fotocerdo2");
 
-//profesor
+//mono
 let mono1=document.getElementById("mono1");
 let fotomono1=document.getElementById("fotomono1");
 let mono2=document.getElementById("mono2");
@@ -158,33 +158,37 @@ function activarmono1(){
     contadormono++;
 
     setTimeout(function() {
- 
+
         if(contadormono !=2){
             mono1.classList.add("bg-danger");
-            mono1.classList.add("invisible");
+           fotomono1.classList.add("invisible");
            contadormono--;
 
         }
         else{
             let audio1 = new Audio("audio/mono.mp3");
             audio1.play();
+
             let resultadomono=document.getElementById("resultadomono");
             resultadomono.classList.remove("invisible");
             resultadomono.classList.add("visible");
         }
+ 
+        
     },1000)
 }
 
 function activarmono2(){
 
-    mono2.classList.remove(" bg-success");
+    
+    mono2.classList.remove("bg-success");
     fotomono2.classList.remove("invisible");
-    contadorprofesor++;
+    contadormono++;
 
     setTimeout(function() {
- 
+
         if(contadormono !=2){
-            mono2.classList.add(" bg-success");
+            mono2.classList.add("bg-success");
            fotomono2.classList.add("invisible");
            contadormono--;
 
@@ -192,13 +196,17 @@ function activarmono2(){
         else{
             let audio1 = new Audio("audio/mono.mp3");
             audio1.play();
+
             let resultadomono=document.getElementById("resultadomono");
             resultadomono.classList.remove("invisible");
             resultadomono.classList.add("visible");
         }
+ 
+        
     },1000)
-   
 }
+   
+
 
 function activarleon1(){
 
