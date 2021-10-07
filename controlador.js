@@ -16,10 +16,17 @@ let fotoprofesor1=document.getElementById("fotoprofesor1");
 let profesor2=document.getElementById("profesor2");
 let fotoprofesor2=document.getElementById("fotoprofesor2");
 
+//policia
+let policia1=document.getElementById("policia1");
+let fotopolicia1=document.getElementById("fotopolicia1");
+let policia2=document.getElementById("policia2");
+let fotopolicia2=document.getElementById("fotopolicia2");
+
 
 let contadormedico=0;
 let contadorconstructor=0;
 let contadorprofesor=0;
+let contadorpolicia=0;
 
 
 medico1.addEventListener("click", activarmedico1);
@@ -30,6 +37,11 @@ constructor2.addEventListener("click", activarconstructor2);
 
 profesor1.addEventListener("click", activarprofesor1);
 profesor2.addEventListener("click", activarprofesor2);
+
+policia1.addEventListener("click", activarpolicia1);
+policia2.addEventListener("click", activarpolicia2);
+
+
 
 
 
@@ -187,4 +199,60 @@ function activarprofesor2(){
         }
     },1000)
    
+}
+
+function activarpolicia1(){
+
+    
+    policia1.classList.remove("bg-info");
+    fotopolicia1.classList.remove("invisible");
+    contadorpolicia++;
+
+    setTimeout(function() {
+
+        if(contadorpolicia !=2){
+            policia1.classList.add("bg-info");
+           fotopolicia1.classList.add("invisible");
+           contadorpolicia--;
+
+        }
+        else{
+            let audio1 = new Audio("audio/audio1.mp3");
+            audio1.play();
+
+            let resultadoPolicia=document.getElementById("resultadoPolicia");
+            resultadoPolicia.classList.remove("invisible");
+            resultadoPolicia.classList.add("visible");
+        }
+ 
+        
+    },1000)
+}
+
+function activarpolicia2(){
+
+    
+    policia2.classList.remove("bg-warning");
+    fotopolicia2.classList.remove("invisible");
+    contadorpolicia++;
+
+    setTimeout(function() {
+
+        if(contadorpolicia !=2){
+            policia2.classList.add("bg-warning");
+            fotopolicia2.classList.add("invisible");
+           contadorpolicia--;
+
+        }
+        else{
+            let audio1 = new Audio("audio/audio1.mp3");
+            audio1.play();
+
+            let resultadoPolicia=document.getElementById("resultadoPolicia");
+            resultadoPolicia.classList.remove("invisible");
+            resultadoPolicia.classList.add("visible");
+        }
+ 
+        
+    },1000)
 }
